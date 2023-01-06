@@ -1,5 +1,5 @@
-//here we import the reducer we have just created and
-//call the action object created previously.
+//here I import the reducer I have just created and
+//call the action object.
 
 import { ProcessReducer } from "./process";
 import { combineReducers } from "redux";

@@ -96,7 +96,8 @@ export default Chat;
 //as this loads once the user has joined the room.
 // It is the main page where a user can chat with each other using the chatbox.
 
-//In the code above, we took the user’s input and passed it to the action process,
+//In the code above, I took the user’s input and passed it to the action process,
 //and then the data was passed to the aes function for encryption.
+
 //Then the encrypted data was sent to socket.on("chat").
 //Also, if the message is received, it will be passed to the aes function for decryption.

@@ -3,7 +3,7 @@
 // as below:
 var aes256 = require("aes256");
 
-//the secret key used for encrypting and decrypting messages
+//the secret key used for encrypting and decrypting messages, just for easy demostration, I put secret key here, otherwise put it in .env file
 var secret_key = "uI2ooxtwHeI6q69PS98fx9SWVGbpQohO";
 
 //returns the encrypted text
@@ -27,7 +27,7 @@ export const to_Decrypt = (cipher, username) => {
   return decrypted;
 };
 
-//In the code above, we imported aes256 from the aes module
+//In the code above, I imported aes256 from the aes module
 // and wrote the functions where the incoming encrypted message is decrypted
 //and outgoing message is encrypted.
 

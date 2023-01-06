@@ -5,7 +5,7 @@ import { createStore } from "redux";
 import React from "react";
 import { Provider } from "react-redux";
 
-
+//here we create an object to store the current state of the application
 const store = createStore(rootReducers);
 ReactDOM.render(
   <Provider store={store}>

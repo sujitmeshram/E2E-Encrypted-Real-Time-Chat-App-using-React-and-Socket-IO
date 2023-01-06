@@ -39,7 +39,7 @@ function Homepage({ socket }) {
 
 export default Homepage;
 
-//From the code above, we take the user name and room name and call
+//From the code above, I take the user name and room name and call
 //the function socket.emit("joinRoom") and pass the username and roomname.
 
 //The function will activate the joinRoom function defined in the backend.

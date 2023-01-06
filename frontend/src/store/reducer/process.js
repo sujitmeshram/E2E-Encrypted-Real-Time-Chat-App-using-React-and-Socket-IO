@@ -1,6 +1,7 @@
 // this will be our reducer.
 // It takes the current state and the action object we have just created to return a new state.
 
+//initialiaze the function with two arguments
 export const ProcessReducer = (state = {}, action) => {
   switch (action.type) {
     //returns updated state

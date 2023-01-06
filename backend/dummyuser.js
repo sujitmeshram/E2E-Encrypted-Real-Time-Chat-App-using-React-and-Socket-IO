@@ -34,6 +34,7 @@ function user_Disconnect(id) {
   const index = c_users.findIndex((p_user) => p_user.id === id);
 
   if (index !== -1) {
+    // https://www.w3schools.com/jsref/jsref_splice.asp
     return c_users.splice(index, 1)[0];
   }
 }

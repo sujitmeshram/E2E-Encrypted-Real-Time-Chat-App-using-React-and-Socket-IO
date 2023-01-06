@@ -3,6 +3,8 @@
 
 const express = require("express");
 const app = express();
+
+// https://socket.io/docs/v4/server-installation/#:~:text=pnpm-,npm%20install%20socket.io,Copy,-To%20install%20a
 const socket = require("socket.io");
 const color = require("colors");
 const cors = require("cors");
@@ -10,7 +12,7 @@ const { get_Current_User, user_Disconnect, join_User } = require("./dummyuser");
 
 app.use(express());
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(cors());
 
@@ -19,6 +21,7 @@ var server = app.listen(
   console.log(`Server is running on the port no: ${port} `.green)
 );
 
+// https://socket.io/docs/v4/
 const io = socket(server);
 
 //initializing the socket io connection

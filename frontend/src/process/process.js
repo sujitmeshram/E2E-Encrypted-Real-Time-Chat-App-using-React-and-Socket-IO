@@ -10,6 +10,7 @@ function Process() {
   return (
     <div className="process">
       <h5>
+        {/* just for the easy demonstration, I put secret key here, othervise put it in .env file   */}
         Secret Key : <span>"uI2ooxtwHeI6q69PS98fx9SWVGbpQohO"</span>
       </h5>
       <div className="incoming">
@@ -25,6 +26,6 @@ function Process() {
 }
 export default Process;
 
-//The code above is an optional component where we display an incoming encrypted message
+//The code above is an optional component where I display an incoming encrypted message
 //and decrypt it using our secret key.
 //The file process.js displays the incoming encrypted and decrypted messages on the sidebar.
